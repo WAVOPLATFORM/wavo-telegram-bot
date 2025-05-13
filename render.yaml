@@ -1,0 +1,13 @@
+
+services:
+  - type: web
+    name: wavo-telegram-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python bot.py"
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: INVITE_LINK
+        sync: false
